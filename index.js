@@ -28,7 +28,8 @@ app.get('/api/v1/users', function (req, res) {
     });
   })
 
-app.listen(3000,function(){//3000番のポートの準備ができたらコールバック
+const PORT = process.env.PORT || 3000;
+app.listen(PORT,function(){//3000番のポートの準備ができたらコールバック
     console.log("I am running");
 });
 
